@@ -1,0 +1,18 @@
+.section { margin-bottom: 2.5rem; }
+.section h2 { padding-bottom: 0.65rem; border-bottom: 1px solid var(--border); font-size: 1rem; }
+.phaseGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem; }
+.phaseChoice { display: flex; align-items: center; gap: 0.65rem; min-height: 50px; padding: 0.75rem; border: 1px solid var(--border); border-radius: 9px; background: var(--surface); cursor: pointer; }
+.phaseChoice:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+.optionList { display: grid; gap: 0.75rem; margin: 1.2rem 0; }
+.optionList label { display: flex; align-items: center; gap: 0.65rem; }
+.hint { padding: 0.8rem; border-left: 3px solid var(--accent); background: var(--surface); color: var(--muted); font-size: 0.88rem; }
+.targetGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 1rem 0; }
+.field { display: grid; gap: 0.4rem; }
+.field span { color: var(--muted); font-size: 0.82rem; }
+.field input, .field select { width: 100%; min-height: 44px; padding: 0.6rem; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-strong); color: var(--text); }
+.positionGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 1rem; }
+.complete { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1rem; padding: 1rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+.complete p { margin: 0; color: var(--muted); font-size: 0.85rem; }
+.modalActions { display: flex; justify-content: flex-end; gap: 0.65rem; margin-top: 1rem; }
+
+@media (max-width: 580px) { .phaseGrid, .targetGrid, .positionGrid { grid-template-columns: 1fr; } .complete { align-items: flex-start; flex-direction: column; } }

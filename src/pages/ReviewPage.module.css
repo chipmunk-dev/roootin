@@ -1,0 +1,30 @@
+.header { margin-bottom: 2rem; text-align: center; }
+.eyebrow { margin-bottom: 0.5rem; color: var(--accent); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.12em; }
+.success { margin-bottom: 0.5rem; font-size: clamp(1.8rem, 7vw, 2.8rem); }
+.subtle { color: var(--muted); }
+.subjectList { display: grid; gap: 0; margin-bottom: 1.5rem; border-block: 1px solid var(--border); }
+.subjectRow { display: flex; justify-content: space-between; padding: 0.85rem 0; border-bottom: 1px solid var(--border); }
+.subjectRow:last-child { border-bottom: 0; }
+.done { color: var(--accent); font-weight: 800; }
+.metrics { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.65rem; margin: 1.5rem 0 2rem; }
+.metric { padding: 1rem 0.6rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); text-align: center; }
+.metric strong { display: block; margin-bottom: 0.3rem; font-size: 1.35rem; }
+.metric span { color: var(--muted); font-size: 0.76rem; }
+.form { display: grid; gap: 1.25rem; }
+.field { display: grid; gap: 0.5rem; }
+.field label, .field legend { font-weight: 750; }
+.input { width: 100%; min-height: 92px; padding: 0.8rem; border: 1px solid var(--border); border-radius: 9px; background: var(--surface-strong); color: var(--text); resize: vertical; }
+.scores { display: flex; gap: 0.55rem; padding: 0; border: 0; }
+.scores label { width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid var(--border); border-radius: 999px; cursor: pointer; }
+.scores label:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+.scores input { position: absolute; opacity: 0; }
+.saved { padding: 0.8rem; border-radius: 9px; background: var(--accent-soft); color: var(--accent); text-align: center; }
+.japanesePanel { margin-bottom: 1.5rem; padding: 1rem; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+.japanesePanel h2 { font-size: 1rem; }
+.japaneseGrid { display: grid; grid-template-columns: 1fr auto; gap: 0.65rem 1rem; }
+.japaneseGrid span { color: var(--muted); }
+.japaneseGrid strong { color: var(--accent); }
+.todaiiSummary { margin: 1rem 0 0; padding-top: 0.8rem; border-top: 1px solid var(--border); line-height: 1.5; }
+.todaiiSummary span { display: block; margin-bottom: 0.25rem; color: var(--muted); font-size: 0.76rem; }
+
+@media (max-width: 720px) { .metrics { grid-template-columns: repeat(2, 1fr); } }

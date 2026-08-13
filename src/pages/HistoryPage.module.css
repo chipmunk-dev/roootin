@@ -1,0 +1,25 @@
+.header { margin-bottom: 2rem; }
+.header p { color: var(--muted); }
+.week { display: grid; gap: 0.8rem; margin-bottom: 2rem; }
+.day { display: grid; grid-template-columns: 2rem minmax(0, 1fr) auto; align-items: center; gap: 0.75rem; }
+.dayLabel { color: var(--muted); }
+.barTrack { height: 12px; overflow: hidden; border-radius: 999px; background: var(--border); }
+.bar { height: 100%; min-width: 0; border-radius: inherit; background: var(--accent); }
+.dayValue { width: 4.8rem; font-size: 0.82rem; text-align: right; }
+.metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+.metric { padding: 1.1rem; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+.metric span { display: block; margin-bottom: 0.4rem; color: var(--muted); font-size: 0.78rem; }
+.metric strong { font-size: 1.5rem; }
+.primaryMetric { grid-column: span 2; background: var(--accent-soft); border-color: transparent; }
+.primaryMetric strong { color: var(--accent); font-size: 2.1rem; }
+.empty { padding: 2rem; border: 1px dashed var(--border); border-radius: 12px; color: var(--muted); text-align: center; }
+.japaneseSection { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+.japaneseSection h2 { font-size: 1rem; }
+.japaneseMetrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; }
+.japaneseMetrics div { padding: 0.75rem; border: 1px solid var(--border); border-radius: 9px; background: var(--surface); }
+.japaneseMetrics span { display: block; margin-bottom: 0.3rem; color: var(--muted); font-size: 0.72rem; }
+.japaneseMetrics strong { font-size: 1.15rem; }
+.wrongAnswers { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem; color: var(--muted); font-size: 0.8rem; }
+.wrongAnswers strong { padding: 0.3rem 0.5rem; border-radius: 6px; background: var(--accent-soft); color: var(--accent); text-transform: capitalize; }
+
+@media (max-width: 580px) { .metrics, .japaneseMetrics { grid-template-columns: repeat(2, 1fr); } .primaryMetric { grid-column: span 2; } }

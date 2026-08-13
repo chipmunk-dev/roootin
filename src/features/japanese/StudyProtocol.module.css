@@ -1,0 +1,21 @@
+.panel { width: min(100%, 620px); padding: 1rem; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); text-align: left; }
+.panel h2 { margin: 0.75rem 0; font-size: 1rem; }
+.eyebrow { margin-bottom: 0.65rem; color: var(--accent); font-size: 0.74rem; font-weight: 800; letter-spacing: 0.1em; }
+.hint { color: var(--muted); font-size: 0.86rem; }
+.checkList { display: grid; gap: 0.65rem; margin: 1rem 0; }
+.checkList label, .checkStep { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; }
+.field { display: grid; gap: 0.45rem; margin-top: 0.8rem; }
+.field > span { color: var(--muted); font-size: 0.88rem; }
+.field input, .field textarea, .wordGrid input { width: 100%; min-height: 42px; padding: 0.65rem; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-strong); color: var(--text); }
+.field textarea { min-height: 72px; resize: vertical; }
+.modeChoices { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+.modeChoices button { flex: 1; }
+.steps { display: grid; gap: 0.85rem; }
+.steps strong { margin-right: 0.4rem; color: var(--accent); font-size: 0.76rem; }
+.staticStep { display: grid; grid-template-columns: auto 1fr; gap: 0.5rem; padding: 0.65rem 0; }
+.wordGrid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.4rem; }
+.practiceGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+.practiceGrid button { display: grid; gap: 0.2rem; }
+.practiceGrid small { opacity: 0.75; font-weight: 500; }
+
+@media (max-width: 520px) { .wordGrid, .practiceGrid { grid-template-columns: repeat(2, 1fr); } .wordGrid input:last-child { grid-column: span 2; } }

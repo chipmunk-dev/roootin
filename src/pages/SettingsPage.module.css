@@ -1,0 +1,15 @@
+.header { margin-bottom: 2rem; }
+.header p { color: var(--muted); }
+.section { margin-bottom: 2.5rem; }
+.section h2 { padding-bottom: 0.65rem; border-bottom: 1px solid var(--border); font-size: 1rem; }
+.timerGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.85rem 1rem; }
+.field { display: grid; grid-template-columns: minmax(0, 1fr) 6rem; align-items: center; gap: 1rem; }
+.field input, .select { width: 100%; min-height: 44px; padding: 0.6rem; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-strong); color: var(--text); }
+.settingRow { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.8rem 0; border-bottom: 1px solid var(--border); }
+.settingText strong { display: block; margin-bottom: 0.2rem; }
+.settingText span { color: var(--muted); font-size: 0.85rem; }
+.toggle { min-width: 3rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+.status { margin-top: 1rem; color: var(--accent); }
+
+@media (max-width: 580px) { .timerGrid { grid-template-columns: 1fr; } .settingRow { align-items: flex-start; flex-direction: column; } .select { width: 100%; } }

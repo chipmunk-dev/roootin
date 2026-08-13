@@ -1,0 +1,49 @@
+.pageHeader { margin-bottom: 2rem; }
+.eyebrow { margin-bottom: 0.45rem; color: var(--accent); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.date { color: var(--muted); }
+.planSummary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin: 1.5rem 0 2rem; }
+.goalCard { min-width: 0; padding: 1rem; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+.goalCard h2 { margin-bottom: 0.45rem; color: var(--muted); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.goalCard p { margin-bottom: 0; line-height: 1.45; overflow-wrap: anywhere; }
+.sectionTitle { margin: 2rem 0 0.35rem; font-size: 1rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.queue { margin-bottom: 1.5rem; }
+.reviewRow { display: grid; grid-template-columns: 2rem minmax(0, 1fr) auto; gap: 0.8rem; align-items: center; padding: 0.85rem 0; border-bottom: 1px solid var(--border); }
+.reviewRow span { color: var(--muted); }
+.actions { position: sticky; bottom: 1rem; display: flex; gap: 0.75rem; padding: 0.65rem; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); }
+.actions button:first-child { flex: 1; }
+.recovery { margin-bottom: 1.5rem; padding: 1rem; border: 1px solid var(--warm); border-radius: 12px; background: var(--surface); }
+.recovery p { margin-bottom: 0.8rem; }
+
+.onboarding { width: min(100%, 580px); margin: 0 auto; }
+.progress { display: flex; gap: 0.4rem; margin-bottom: 2rem; }
+.progress span { height: 4px; flex: 1; border-radius: 999px; background: var(--border); }
+.progress .active { background: var(--accent); }
+.prompt { margin-bottom: 1.75rem; font-size: clamp(1.6rem, 6vw, 2.2rem); line-height: 1.2; }
+.choices { display: grid; gap: 0.75rem; }
+.choice {
+  min-height: 72px;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+}
+.choice strong { display: block; margin-bottom: 0.25rem; }
+.choice span { color: var(--muted); font-size: 0.88rem; }
+.selected { border-color: var(--accent); background: var(--accent-soft); }
+.field { display: grid; gap: 0.55rem; margin-bottom: 1rem; }
+.field label { font-weight: 700; }
+.input { width: 100%; min-height: 52px; padding: 0.8rem 0.9rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-strong); color: var(--text); }
+.stepActions { display: flex; justify-content: space-between; gap: 0.75rem; margin-top: 1.5rem; }
+.stepActions button:last-child { margin-left: auto; }
+.checkRow { display: flex; align-items: center; gap: 0.65rem; margin-top: 1.2rem; }
+.weaknessChoices { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem; color: var(--muted); }
+.weaknessChoices label { display: flex; align-items: center; gap: 0.3rem; text-transform: capitalize; }
+
+@media (max-width: 620px) {
+  .planSummary { grid-template-columns: 1fr; }
+  .goalCard { display: grid; grid-template-columns: 7rem 1fr; gap: 0.7rem; }
+  .goalCard h2, .goalCard p { margin: 0; }
+}
